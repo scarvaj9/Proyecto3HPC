@@ -4,22 +4,19 @@
 # Locating Restriction Sites
 # ==========================
 # http://rosalind.info/problems/revp/
-# 
+#
 # A DNA string is a reverse palindrome if it is equal to its reverse complement.
-# For instance, GCATGC is a reverse palindrome because its reverse complement is
-# GCATGC.
-# 
-# Given: A DNA string of length at most 1 kbp.
-# 
-# Return: The position and length of every reverse palindrome in the string
-# having length between 4 and 12.
-# 
+# For instance, GCATGC is a reverse palindrome because its reverse complement is GCATGC. See Figure 2.
+#
+# Given: A DNA string of length at most 1 kbp in FASTA format.
+#
+# Return: The position and length of every reverse palindrome in the string having length between 4 and 12.
+# You may return these pairs in any order
+#
 # Sample Dataset
-# --------------
+# >Rosalind_24
 # TCAATGCATGCGGGTCTATATGCAT
-# 
 # Sample Output
-# -------------
 # 4 6
 # 5 4
 # 6 6
@@ -31,7 +28,7 @@
 
 from time import time
 
-tiempo_inicial = time() 
+tiempo_inicial = time()
 
 def reverse_complement(s):
     complements = {'A':'T', 'T':'A', 'G':'C', 'C':'G'}
@@ -74,8 +71,8 @@ if __name__ == "__main__":
     # Cierra archivo
     archivo.close()
 
-tiempo_final = time() 
+tiempo_final = time()
 
 tiempo_ejecucion = tiempo_final - tiempo_inicial
- 
+
 print('El tiempo de ejecucion fue:', tiempo_ejecucion)  # En segundos
