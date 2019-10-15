@@ -63,7 +63,7 @@ if __name__ == "__main__":
     small_dataset = "TCAATGCATGCGGGTCTATATGCAT"
     large_dataset = open('rosalind_revp.txt').read().strip()
 
-    results = reverse_palindromes(small_dataset)
+    results = reverse_palindromes(large_dataset)
 
     res = "\n".join([' '.join(map(str, r)) for r in results])
     archivo = open('resultado.txt','w')
@@ -78,4 +78,4 @@ tiempo_final = time()
 
 tiempo_ejecucion = tiempo_final - tiempo_inicial
  
-print ('El tiempo de ejecucion fue:',tiempo_ejecucion) #En segundos
+print('El tiempo de ejecucion fue:', tiempo_ejecucion)  # En segundos
