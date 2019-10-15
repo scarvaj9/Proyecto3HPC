@@ -21,9 +21,9 @@ En éste repositorio se encuentran dos programas (uno en serial o secuencial y o
 
 # 3. Análisis de solución:
 *Al correr los dos programas, cada uno con el mismo documento con la misma cantidad de datos se observaron los siguientes aspectos*
-1. ![Comando HTOP corriendo el programa en serial](/imagenes/secuencial.png)
-2. ![Tiempo de ejecución del programa en serial](/imagenes/paralelo.png)
-# 6.Bibliografía:
+1. ![Comando HTOP corriendo el programa en secuencial](/imagenes/secuencial.png)
+2. ![Comando HTOP corriendo el programa en paralelo](/imagenes/paralelo.png)
+# 4.Bibliografía:
 1. https://pythonprogramming.net/sending-receiving-data-messages-mpi4py/?completed=/mpi4py-size-command-mpi/
 2. https://pypi.org/project/mpi4py/
 3. https://mpi4py.readthedocs.io/en/stable/tutorial.html
